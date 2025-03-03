@@ -14,7 +14,7 @@ module Alphadecimal
     def alphadecimal
       return self if nil? || self < 0
       return to_s if self == 0
-      string = ""
+      string = +""
       value = self
       until value == 0
         case mod = value % 62
